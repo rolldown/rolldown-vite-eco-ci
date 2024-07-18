@@ -50,7 +50,7 @@ if (hasError) {
 function runInApp(dirPath, caseName) {
 	return new Promise((resolve, reject) => {
 		const p = spawn("npm", ["run", "preview"], {
-			stdio: ["inherit", "pipe", "pipe"],
+			stdio: ["pipe", "pipe", "pipe"],
 			cwd: dirPath,
 		});
 
