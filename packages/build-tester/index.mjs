@@ -11,6 +11,8 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const appDir = path.resolve(__dirname, "../../apps");
 const list = fs.readdirSync(appDir);
 
+const urlRegex = /http:\/\/(?:www\.)?[a-zA-Z0-9-]+\:\d+/g
+
 // ignore app list
 const ignoreList = ["qwik-jsx", "qwik-tsx"];
 
@@ -48,11 +50,21 @@ if (hasError) {
 function runInApp(dirPath, caseName) {
 	return new Promise((resolve, reject) => {
 		const p = spawn("npm", ["run", "preview"], {
-			stdio: "inherit",
+			stdio: ["inherit", "pipe", "pipe"],
 			cwd: dirPath,
 		});
 
-		setTimeout(async () => {
+		let data = "";
+
+		p.stdout?.on("data", (d) => {
+			data += d.toString();
+      console.log(`data: `, data)
+			if (urlRegex.exec(data)) {
+        console.log(data)
+        runTest()
+			}
+		});
+		async function runTest() {
 			let exitCode = p.exitCode;
 			let err;
 			try {
@@ -69,8 +81,7 @@ function runInApp(dirPath, caseName) {
 					}
 				});
 			}
-			// TODO: Using regex match to get the port number
-		}, 2000);
+		}
 
 		async function testInBrowser() {
 			const browser = await chromium.launch();
