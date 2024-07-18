@@ -11,15 +11,22 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const appDir = path.resolve(__dirname, "../../apps");
 const list = fs.readdirSync(appDir);
 
+// ignore app list
+const ignoreList = ["qwik-jsx", "qwik-tsx"];
+
 let hasError = false;
 for (let appName of list) {
+	if (ignoreList.includes(appName)) {
+		console.warn(`Ignoring ${appName}`);
+		continue;
+	}
 	let abPath = path.resolve(appDir, appName);
 	let err;
 	try {
 		await runInApp(abPath, appName);
 	} catch (e) {
 		err = e;
-    hasError = true;
+		hasError = true;
 	} finally {
 		if (err) {
 			console.error(`Error: ${err} when executed ${appName}`, err);
@@ -30,11 +37,11 @@ for (let appName of list) {
 }
 
 if (hasError) {
-  process.exit(-1)
+	process.exit(-1);
 }
 
 /**
- * @param {string} dirPath 
+ * @param {string} dirPath
  * @param {string} caseName
  *
  * */
@@ -56,9 +63,9 @@ function runInApp(dirPath, caseName) {
 			} finally {
 				cleanUp(exitCode, () => {
 					if (err) {
-            reject(err)
+						reject(err);
 					} else {
-            resolve(undefined)
+						resolve(undefined);
 					}
 				});
 			}

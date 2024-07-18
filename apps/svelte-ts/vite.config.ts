@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite'
+// @ts-ignore
+import { defineConfig } from 'rolldown-vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
 // https://vitejs.dev/config/

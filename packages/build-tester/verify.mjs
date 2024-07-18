@@ -56,4 +56,24 @@ export const customAssertMap = {
 		let content = await (await page.waitForSelector("#root > h1")).innerText();
 		assert(content.includes("Vite"));
 	},
+	"solid-js": async (page) => {
+		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		assert(content.includes("Vite"));
+	},
+	"solid-ts": async (page) => {
+		let content = await (await page.waitForSelector("#root > h1")).innerText();
+		assert(content.includes("Vite"));
+	},
+	"svelte-js": async (page) => {
+		let content = await (
+			await page.waitForSelector("#app > main > h1")
+		).innerText();
+		assert(content.includes("Vite"));
+	},
+	"svelte-ts": async (page) => {
+		let content = await (
+			await page.waitForSelector("#app > main > h1")
+		).innerText();
+		assert(content.includes("Vite"));
+	},
 };

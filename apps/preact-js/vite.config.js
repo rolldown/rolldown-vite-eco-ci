@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'rolldown-vite'
 import preact from '@preact/preset-vite'
 
 // https://vitejs.dev/config/

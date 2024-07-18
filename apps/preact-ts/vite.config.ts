@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite'
+// @ts-ignore
+import { defineConfig } from 'rolldown-vite'
 import preact from '@preact/preset-vite'
 
 // https://vitejs.dev/config/

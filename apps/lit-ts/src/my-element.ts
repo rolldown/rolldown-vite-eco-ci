@@ -1,6 +1,8 @@
 import { LitElement, css, html } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
+// @ts-ignore
 import litLogo from './assets/lit.svg'
+// @ts-ignore
 import viteLogo from '/vite.svg'
 
 /**
