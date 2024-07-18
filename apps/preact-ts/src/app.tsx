@@ -1,5 +1,7 @@
 import { useState } from 'preact/hooks'
+// @ts-ignore
 import preactLogo from './assets/preact.svg'
+// @ts-ignore
 import viteLogo from '/vite.svg'
 import './app.css'
 
