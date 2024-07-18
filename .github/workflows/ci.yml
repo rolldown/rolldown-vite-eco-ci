@@ -30,6 +30,7 @@ jobs:
       - name: Install dependencies and verify build artificts
         run: |
           pnpm install -r
+          pnpx playwright install --with-deps
           pnpm --filter './apps/**' --filter "!./apps/qwik-*" run build
           pnpm verify-build
 
