@@ -1,5 +1,7 @@
 import { createSignal } from 'solid-js'
+// @ts-ignore
 import solidLogo from './assets/solid.svg'
+// @ts-ignore
 import viteLogo from '/vite.svg'
 import './App.css'
 
