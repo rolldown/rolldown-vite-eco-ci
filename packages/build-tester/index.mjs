@@ -58,7 +58,6 @@ function runInApp(dirPath, caseName) {
 
 		p.stdout?.on("data", (d) => {
 			data += d.toString();
-      console.log(`data: `, data)
 			if (urlRegex.exec(data)) {
         console.log(data)
         runTest()
