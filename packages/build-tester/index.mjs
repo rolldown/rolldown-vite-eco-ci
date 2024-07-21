@@ -50,19 +50,15 @@ if (hasError) {
 function runInApp(dirPath, caseName) {
 	return new Promise((resolve, reject) => {
 		const p = spawn("npm", ["run", "preview"], {
-			stdio: ["pipe", "pipe", "pipe"],
+			stdio: "inherit",
 			cwd: dirPath,
 		});
 
 		let data = "";
 
-		p.stdout?.on("data", (d) => {
-			data += d.toString();
-			if (urlRegex.exec(data)) {
-        console.log(data)
+    setTimeout(() => {
         runTest()
-			}
-		});
+    }, 2000)
 		async function runTest() {
 			let exitCode = p.exitCode;
 			let err;
