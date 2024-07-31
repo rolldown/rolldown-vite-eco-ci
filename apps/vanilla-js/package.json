@@ -9,6 +9,5 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "rolldown-vite": "0.1.0"
   }
 }

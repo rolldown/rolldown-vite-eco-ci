@@ -12,7 +12,6 @@
     "preact": "^10.22.1"
   },
   "devDependencies": {
-    "@preact/preset-vite": "^2.8.3",
-    "rolldown-vite": "0.1.0"
+    "@preact/preset-vite": "^2.8.3"
   }
 }

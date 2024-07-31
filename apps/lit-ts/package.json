@@ -12,7 +12,6 @@
     "lit": "^3.1.4"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "rolldown-vite": "0.1.0"
+    "typescript": "^5.2.2"
   }
 }
