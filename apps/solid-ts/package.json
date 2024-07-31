@@ -12,8 +12,6 @@
     "solid-js": "^1.8.18"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "rolldown-vite": "0.1.0",
-    "vite-plugin-solid": "^2.10.2"
+    "typescript": "^5.2.2"
   }
 }
