@@ -220,7 +220,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.1.1(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))
+        version: 5.1.2(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))
 
   apps/vue-ts:
     dependencies:
@@ -230,7 +230,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^5.0.5
-        version: 5.1.1(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))
+        version: 5.1.2(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))
       typescript:
         specifier: ^5.2.2
         version: 5.5.4
@@ -891,8 +891,8 @@ packages:
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0
 
-  '@vitejs/plugin-vue@5.1.1':
-    resolution: {integrity: sha512-sDckXxlHpMsjRQbAH9WanangrfrblsOd3pNifePs+FOHjJg1jfWq5L/P0PsBRndEt3nmdUnmvieP8ULDeX5AvA==}
+  '@vitejs/plugin-vue@5.1.2':
+    resolution: {integrity: sha512-nY9IwH12qeiJqumTCLJLE7IiNx7HZ39cbHaysEUd+Myvbz9KAqd2yq+U01Kab1R/H1BmiyM2ShTYlNH32Fzo3A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       vite: ^5.0.0
@@ -3243,7 +3243,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitejs/plugin-vue@5.1.1(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))':
+  '@vitejs/plugin-vue@5.1.2(vite@5.3.5)(vue@3.4.36(typescript@5.5.4))':
     dependencies:
       vite: 5.3.5
       vue: 3.4.36(typescript@5.5.4)
