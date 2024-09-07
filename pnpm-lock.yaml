@@ -8,11 +8,14 @@ importers:
 
   .:
     devDependencies:
+      '@playwright/test':
+        specifier: ^1.47.0
+        version: 1.47.0
       playwright:
         specifier: ^1.45.2
         version: 1.47.0
       rolldown-vite:
-        specifier: latest
+        specifier: 0.0.3
         version: 0.0.3
       tree-kill:
         specifier: ^1.2.2
@@ -173,6 +176,9 @@ importers:
       typescript:
         specifier: ^5.2.2
         version: 5.5.4
+      vite-plugin-solid:
+        specifier: 2.10.2
+        version: 2.10.2(solid-js@1.8.18)(vite@5.4.3)
 
   apps/svelte-js:
     devDependencies:
@@ -608,6 +614,11 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
+
+  '@playwright/test@1.47.0':
+    resolution: {integrity: sha512-SgAdlSwYVpToI4e/IH19IHHWvoijAYH5hu2MWSXptRypLSnzj51PcGD+rsOXFayde4P9ZLi+loXVwArg6IUkCA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   '@preact/preset-vite@2.9.0':
     resolution: {integrity: sha512-B9yVT7AkR6owrt84K3pLNyaKSvlioKdw65VqE/zMiR6HMovPekpsrwBNs5DJhBFEd5cvLMtCjHNHZ9P7Oblveg==}
@@ -2580,7 +2591,7 @@ snapshots:
 
   '@babel/helper-module-imports@7.18.6':
     dependencies:
-      '@babel/types': 7.24.9
+      '@babel/types': 7.25.6
 
   '@babel/helper-module-imports@7.24.7':
     dependencies:
@@ -2882,6 +2893,10 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
+
+  '@playwright/test@1.47.0':
+    dependencies:
+      playwright: 1.47.0
 
   '@preact/preset-vite@2.9.0(@babel/core@7.24.9)(preact@10.23.2)(vite@5.4.3)':
     dependencies:
@@ -3391,7 +3406,7 @@ snapshots:
       '@babel/core': 7.24.9
       '@babel/helper-module-imports': 7.18.6
       '@babel/plugin-syntax-jsx': 7.24.7(@babel/core@7.24.9)
-      '@babel/types': 7.24.9
+      '@babel/types': 7.25.6
       html-entities: 2.3.3
       validate-html-nesting: 1.2.2
 
@@ -4686,7 +4701,7 @@ snapshots:
     dependencies:
       '@babel/generator': 7.24.10
       '@babel/helper-module-imports': 7.24.7
-      '@babel/types': 7.24.9
+      '@babel/types': 7.25.6
       solid-js: 1.8.18
     transitivePeerDependencies:
       - supports-color
