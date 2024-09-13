@@ -1,8 +1,8 @@
+// @ts-ignore
 import { defineConfig } from "rolldown-vite";
-import solid from "vite-plugin-solid";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [solid()],
   experimental: {
     enableNativePlugin: true,
   },

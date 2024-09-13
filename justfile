@@ -1,7 +1,10 @@
+build:
+    pnpm --filter './apps/**' --filter "!./apps/qwik-*" run build
 
 setup:
     pnpm install -r
-    pnpm --filter './apps/**' --filter "!./apps/qwik-*" run build
+    just build
 
 test:
     pnpm verify-build
+

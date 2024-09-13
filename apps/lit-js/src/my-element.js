@@ -1,7 +1,12 @@
 import { LitElement, css, html } from 'lit'
 import litLogo from './assets/lit.svg'
 import viteLogo from '/vite.svg'
+if (process.env.NODE_ENV === 'development') {
+  console.log('development')
 
+} else {
+  console.log('production')
+}
 /**
  * An example element.
  *
