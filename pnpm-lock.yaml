@@ -122,7 +122,7 @@ importers:
         version: 5.1.0(eslint@9.9.1)
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
-        version: 0.4.11(eslint@9.9.1)
+        version: 0.4.18(eslint@9.9.1)
 
   apps/react-tsx:
     dependencies:
@@ -156,7 +156,7 @@ importers:
         version: 5.1.0(eslint@9.9.1)
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
-        version: 0.4.11(eslint@9.9.1)
+        version: 0.4.18(eslint@9.9.1)
       typescript:
         specifier: ^5.2.2
         version: 5.5.4
@@ -1728,10 +1728,10 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
 
-  eslint-plugin-react-refresh@0.4.11:
-    resolution: {integrity: sha512-wrAKxMbVr8qhXTtIKfXqAn5SAtRZt0aXxe5P23Fh4pUAdC6XEsybGLB8P0PI4j1yYqOgUEUlzKAGDfo7rJOjcw==}
+  eslint-plugin-react-refresh@0.4.18:
+    resolution: {integrity: sha512-IRGEoFn3OKalm3hjfolEWGqoF/jPqeEYFp+C8B0WMzwGwBMvlRDQd06kghDhF0C61uJ6WfSDhEZE/sAQjduKgw==}
     peerDependencies:
-      eslint: '>=7'
+      eslint: '>=8.40'
 
   eslint-plugin-react@7.35.2:
     resolution: {integrity: sha512-Rbj2R9zwP2GYNcIak4xoAMV57hrBh3hTaR0k7hVjwCQgryE/pw5px4b13EYjduOI0hfXyZhwBxaGpOTbWSGzKQ==}
@@ -2895,14 +2895,6 @@ packages:
       tsx:
         optional: true
       yaml:
-        optional: true
-
-  vitefu@0.2.5:
-    resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
-    peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0
-    peerDependenciesMeta:
-      vite:
         optional: true
 
   vitefu@1.0.5:
@@ -4527,7 +4519,7 @@ snapshots:
     dependencies:
       eslint: 9.9.1
 
-  eslint-plugin-react-refresh@0.4.11(eslint@9.9.1):
+  eslint-plugin-react-refresh@0.4.18(eslint@9.9.1):
     dependencies:
       eslint: 9.9.1
 
@@ -5712,10 +5704,6 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
       terser: 5.32.0
-
-  vitefu@0.2.5(vite@6.1.0(terser@5.32.0)):
-    optionalDependencies:
-      vite: 6.1.0(terser@5.32.0)
 
   vitefu@1.0.5(vite@6.1.0(terser@5.32.0)):
     optionalDependencies:
