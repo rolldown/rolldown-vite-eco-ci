@@ -73,9 +73,6 @@ importers:
       serve:
         specifier: ^14.2.3
         version: 14.2.4
-      vite:
-        specifier: ^6.0.0
-        version: 6.1.0(lightningcss@1.29.1)(terser@5.38.1)
 
   apps/qwik-tsx:
     dependencies:

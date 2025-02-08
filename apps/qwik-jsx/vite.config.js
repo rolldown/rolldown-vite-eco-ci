@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'rolldown-vite'
 import { qwikVite } from '@builder.io/qwik/optimizer'
 
 // https://vitejs.dev/config/
@@ -8,4 +8,7 @@ export default defineConfig({
       csr: true,
     }),
   ],
+  experimental: {
+    enableNativePlugin: true,
+  }
 })

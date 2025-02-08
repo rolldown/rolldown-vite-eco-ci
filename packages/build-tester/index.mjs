@@ -14,9 +14,8 @@ const list = fs.readdirSync(appDir);
 const urlRegex = /http:\/\/(?:www\.)?[a-zA-Z0-9-]+\:\d+/g
 
 // ignore app list
-const ignoreList = ["qwik-jsx", "qwik-tsx"];
+const ignoreList = [];
 const includeList = process.argv.slice(2);
-console.log(`includeList: `, includeList)
 
 let hasError = false;
 for (let appName of list) {
