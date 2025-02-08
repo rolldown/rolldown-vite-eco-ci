@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [
     qwikVite({
       csr: true,
+      client: {
+        outDir: "dist/client",
+      }
     }),
   ],
   experimental: {
