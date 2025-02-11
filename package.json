@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@10.3.0",
   "devDependencies": {
     "@playwright/test": "^1.47.0",
     "playwright": "^1.45.2",
