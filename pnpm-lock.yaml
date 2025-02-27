@@ -45,21 +45,21 @@ importers:
     dependencies:
       preact:
         specifier: ^10.22.1
-        version: 10.26.2
+        version: 10.26.3
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.8.3
-        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.2)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
 
   apps/preact-ts:
     dependencies:
       preact:
         specifier: ^10.22.1
-        version: 10.26.2
+        version: 10.26.3
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.8.3
-        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.2)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+        version: 2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
       typescript:
         specifier: ^5.2.2
         version: 5.7.3
@@ -179,7 +179,7 @@ importers:
         version: 5.7.3
       vite-plugin-solid:
         specifier: 2.11.1
-        version: 2.11.5(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+        version: 2.11.1(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
 
   apps/svelte-js:
     devDependencies:
@@ -2253,8 +2253,8 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  preact@10.26.2:
-    resolution: {integrity: sha512-0gNmv4qpS9HaN3+40CLBAnKe0ZfyE4ZWo5xKlC1rVrr0ckkEvJvAQqKaHANdFKsGstoxrY4AItZ7kZSGVoVjgg==}
+  preact@10.26.3:
+    resolution: {integrity: sha512-OJCfNTdttkOTCbTN+gCnXn/woDqz1dIjvP+gdCoYGP2kKuX6w79FAP8qgY/r7jgAunvqHVVmEOKzKOFWzrXZdw==}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -2622,6 +2622,16 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  vite-plugin-solid@2.11.1:
+    resolution: {integrity: sha512-X9vbbK6AOOA6yxSsNl1VTuUq5y4BG9AR6Z5F/J1ZC2VO7ll8DlSCbOL+RcZXlRbxn0ptE6OI5832nGQhq4yXKQ==}
+    peerDependencies:
+      '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
+      solid-js: ^1.7.2
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    peerDependenciesMeta:
+      '@testing-library/jest-dom':
+        optional: true
 
   vite-plugin-solid@2.11.5:
     resolution: {integrity: sha512-XRXToYfVPDMZmlLzPoyYebGLCNa5pI/jv6LQxJBIadclaR1chyl8IDwdwJ7GY49whjDlom3cfDAI+00JQLgpzw==}
@@ -3224,12 +3234,12 @@ snapshots:
     dependencies:
       playwright: 1.50.1
 
-  '@preact/preset-vite@2.10.1(@babel/core@7.26.9)(preact@10.26.2)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))':
+  '@preact/preset-vite@2.10.1(@babel/core@7.26.9)(preact@10.26.3)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.9)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.9)
-      '@prefresh/vite': 2.4.7(preact@10.26.2)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+      '@prefresh/vite': 2.4.7(preact@10.26.3)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.9)
       debug: 4.4.0
@@ -3242,20 +3252,20 @@ snapshots:
 
   '@prefresh/babel-plugin@0.5.1': {}
 
-  '@prefresh/core@1.5.3(preact@10.26.2)':
+  '@prefresh/core@1.5.3(preact@10.26.3)':
     dependencies:
-      preact: 10.26.2
+      preact: 10.26.3
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.7(preact@10.26.2)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))':
+  '@prefresh/vite@2.4.7(preact@10.26.3)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.5.3(preact@10.26.2)
+      '@prefresh/core': 1.5.3(preact@10.26.3)
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
-      preact: 10.26.2
+      preact: 10.26.3
       vite: 6.2.0(lightningcss@1.29.1)(terser@5.39.0)
     transitivePeerDependencies:
       - supports-color
@@ -4845,7 +4855,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact@10.26.2: {}
+  preact@10.26.3: {}
 
   prelude-ls@1.2.1: {}
 
@@ -5326,6 +5336,19 @@ snapshots:
   validate-html-nesting@1.2.2: {}
 
   vary@1.1.2: {}
+
+  vite-plugin-solid@2.11.1(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0)):
+    dependencies:
+      '@babel/core': 7.26.9
+      '@types/babel__core': 7.20.5
+      babel-preset-solid: 1.9.5(@babel/core@7.26.9)
+      merge-anything: 5.1.7
+      solid-js: 1.9.5
+      solid-refresh: 0.6.3(solid-js@1.9.5)
+      vite: 6.2.0(lightningcss@1.29.1)(terser@5.39.0)
+      vitefu: 1.0.6(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+    transitivePeerDependencies:
+      - supports-color
 
   vite-plugin-solid@2.11.5(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0)):
     dependencies:
