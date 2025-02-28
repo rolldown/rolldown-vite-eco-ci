@@ -116,7 +116,7 @@ importers:
         version: 7.37.4(eslint@9.21.0)
       eslint-plugin-react-hooks:
         specifier: ^5.0.0
-        version: 5.1.0(eslint@9.21.0)
+        version: 5.2.0(eslint@9.21.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
         version: 0.4.19(eslint@9.21.0)
@@ -150,7 +150,7 @@ importers:
         version: 9.21.0
       eslint-plugin-react-hooks:
         specifier: ^5.0.0
-        version: 5.1.0(eslint@9.21.0)
+        version: 5.2.0(eslint@9.21.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.7
         version: 0.4.19(eslint@9.21.0)
@@ -179,7 +179,7 @@ importers:
         version: 5.7.3
       vite-plugin-solid:
         specifier: 2.11.1
-        version: 2.11.6(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+        version: 2.11.1(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
 
   apps/svelte-js:
     devDependencies:
@@ -1533,8 +1533,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-react-hooks@5.1.0:
-    resolution: {integrity: sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==}
+  eslint-plugin-react-hooks@5.2.0:
+    resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -2622,6 +2622,16 @@ packages:
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+
+  vite-plugin-solid@2.11.1:
+    resolution: {integrity: sha512-X9vbbK6AOOA6yxSsNl1VTuUq5y4BG9AR6Z5F/J1ZC2VO7ll8DlSCbOL+RcZXlRbxn0ptE6OI5832nGQhq4yXKQ==}
+    peerDependencies:
+      '@testing-library/jest-dom': ^5.16.6 || ^5.17.0 || ^6.*
+      solid-js: ^1.7.2
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    peerDependenciesMeta:
+      '@testing-library/jest-dom':
+        optional: true
 
   vite-plugin-solid@2.11.6:
     resolution: {integrity: sha512-Sl5CTqJTGyEeOsmdH6BOgalIZlwH3t4/y0RQuFLMGnvWMBvxb4+lq7x3BSiAw6etf0QexfNJW7HSOO/Qf7pigg==}
@@ -4132,7 +4142,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-react-hooks@5.1.0(eslint@9.21.0):
+  eslint-plugin-react-hooks@5.2.0(eslint@9.21.0):
     dependencies:
       eslint: 9.21.0
 
@@ -5326,6 +5336,19 @@ snapshots:
   validate-html-nesting@1.2.2: {}
 
   vary@1.1.2: {}
+
+  vite-plugin-solid@2.11.1(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0)):
+    dependencies:
+      '@babel/core': 7.26.9
+      '@types/babel__core': 7.20.5
+      babel-preset-solid: 1.9.5(@babel/core@7.26.9)
+      merge-anything: 5.1.7
+      solid-js: 1.9.5
+      solid-refresh: 0.6.3(solid-js@1.9.5)
+      vite: 6.2.0(lightningcss@1.29.1)(terser@5.39.0)
+      vitefu: 1.0.6(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0))
+    transitivePeerDependencies:
+      - supports-color
 
   vite-plugin-solid@2.11.6(solid-js@1.9.5)(vite@6.2.0(lightningcss@1.29.1)(terser@5.39.0)):
     dependencies:
