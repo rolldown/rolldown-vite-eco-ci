@@ -12,6 +12,6 @@
     "serve": "^14.2.3"
   },
   "dependencies": {
-    "@builder.io/qwik": "1.12.1"
+    "@builder.io/qwik": "1.13.0"
   }
 }
